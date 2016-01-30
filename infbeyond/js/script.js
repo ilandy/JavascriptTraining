@@ -18,7 +18,7 @@ function beginRndNum(trigger){
 
 			running = false;
 			clearTimeout(g_Timer);		
-			$(trigger).val("開始");
+			$(trigger).text("開始");
 			$('#ResultNum').css('color','red');
 			g_PersonCount[preNum] = "";
 			g_Old = $.extend(true,[], g_PersonCount);
@@ -32,7 +32,7 @@ function beginRndNum(trigger){
 		} else {
 			running = true;
 			$('#ResultNum').css('color','black');
-			$(trigger).val("停止");
+			$(trigger).text("停止");
 			beginTimer();
 			
 		}
