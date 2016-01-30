@@ -6,7 +6,7 @@ var g_Timer;
 var running = false;
 var preNum ;
 var runed = false; 
-var adariNum = 2 //全部獎項數;
+var adariNum = 100; //全部獎項數
 for(var i=0;i<AllPerson;i++){
 	a = String(i);
 	if(a.length==1){
@@ -21,7 +21,7 @@ for(var i=0;i<AllPerson;i++){
 }
 function beginRndNum(trigger){
 	if( adariNum < AllPerson-g_PersonCount.length){
-			$('#ResultNum').text('已全數領獎');
+			$('#ResultNum').text('全數開出，明年見!');
 			running = false;
 
 		}else{
